@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38652316-3580-427E-99AB-71D540D7564F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MahApps.Metro.IconPacks.CryptoCoins</RootNamespace>
+    <AssemblyName>MahApps.Metro.IconPacks.CryptoCoins</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\Debug\MahApps.Metro.IconPacks.CryptoCoins.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release_NET46\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\Release_NET46\MahApps.Metro.IconPacks.CryptoCoins.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\MahApps.Metro.IconPacks\Converter\FlipToScaleValueConverter.cs">
+      <Link>Converter\FlipToScaleValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\Converter\MarkupConverter.cs">
+      <Link>Converter\MarkupConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\Converter\NullToUnsetValueConverter.cs">
+      <Link>Converter\NullToUnsetValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIcon.cs">
+      <Link>PackIcon.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIconCryptoCoins.cs">
+      <Link>PackIconCryptoCoins.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIconCryptoCoinsDataFactory.cs">
+      <Link>PackIconCryptoCoinsDataFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIconCryptoCoinsExtension.cs">
+      <Link>PackIconCryptoCoinsExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIconCryptoCoinsKind.cs">
+      <Link>PackIconCryptoCoinsKind.cs</Link>
+    </Compile>
+    <Compile Include="..\MahApps.Metro.IconPacks\PackIconExtension.cs">
+      <Link>PackIconExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\paket-files\ControlzEx\ControlzEx\src\ControlzEx\PackIconBase.cs">
+      <Link>ControlzEx\PackIconBase.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="..\MahApps.Metro.IconPacks\Themes\PackIconCryptoCoins.xaml">
+      <Link>Themes\PackIconCryptoCoins.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

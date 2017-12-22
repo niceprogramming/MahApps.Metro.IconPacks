@@ -121,6 +121,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\PackIconCryptoCoins.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\PackIconSimpleIcons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -131,6 +135,10 @@
     <Compile Include="Converter\MarkupConverter.cs" />
     <Compile Include="Converter\NullToUnsetValueConverter.cs" />
     <Compile Include="PackIcon.cs" />
+    <Compile Include="PackIconCryptoCoins.cs" />
+    <Compile Include="PackIconCryptoCoinsDataFactory.cs" />
+    <Compile Include="PackIconCryptoCoinsExtension.cs" />
+    <Compile Include="PackIconCryptoCoinsKind.cs" />
     <Compile Include="PackIconEntypo.cs" />
     <Compile Include="PackIconEntypoDataFactory.cs" />
     <Compile Include="PackIconEntypoExtension.cs" />

@@ -72,6 +72,13 @@ namespace MahApps.Metro.IconPacks
             {
                 return this.GetPackIcon<PackIconSimpleIcons, PackIconSimpleIconsKind>((PackIconSimpleIconsKind)this.Kind);
             }
+
+#endif
+#if ALL || CRYPTOCOINS
+            if (this.Kind is PackIconCryptoCoinsKind)
+            {
+                return this.GetPackIcon<PackIconCryptoCoins, PackIconCryptoCoinsKind>((PackIconCryptoCoinsKind)this.Kind);
+            }
 #endif
             return null;
         }
